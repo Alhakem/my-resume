@@ -17,11 +17,39 @@ body .btm-nav{
 #loading-spinner{
   display:none;
 }
+section{
+  max-width: 780px;
+  margin: 0 auto;
+}
+.introduction{
+  max-width: 460px;
+}
 #loading-spinner{
   height: calc(100vh - 50px);
 }
 #more-skills{
   cursor: pointer;
+}
+
+.hero-content{
+  align-items: baseline;
+}
+
+@media (min-width: 768px){
+  .introduction{
+    max-width: 460px;
+    /* margin-left: 40px; */
+  }
+  .hero-content{
+    align-items: baseline;
+  }
+  #main-page .job-title{
+    text-align: left !important;
+  }
+  .name-title{
+    margin-left:10px;
+  }
+  .avatar 
 }
 /* h4{
   position: sticky;
