@@ -138,8 +138,8 @@
 
         <div class="bg-white rounded-lg p-2 w-20 h-20">
           <div class="flex flex-col gap-1 justify-center items-center h-full">
-            <img src="./assets/redis-svgrepo-com.svg" class="h-10 w-10">
-            <span class="text-xs font-medium text-gray-500 dark:text-white">Redis</span>
+            <img src="./assets/couchdb-icon-svgrepo-com.svg" class="h-10 w-10">
+            <span class="text-xs font-medium text-gray-500 dark:text-white">Couchdb</span>
           </div>
         </div>
 
@@ -365,12 +365,17 @@
     <section class="pt-12 bg-white">
       <h4 class="text-2xl px-6 font-bold dark:text-white mb-7">My Tech Stack</h4>
 
-      <div id="accordion-color" data-accordion="collapse"
+      <div id="accordion-flush" data-accordion=" collapse"
         data-active-classes="bg-white dark:bg-gray-800 text-gray-800 dark:text-white">
+
+
+
+
         <h2 id="accordion-color-heading-1">
-          <button type="button" aria-expanded="true"
-            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
-            data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-1" aria-expanded="false"
+            aria-controls="accordion-color-body-1">
             <div class="flex gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon text-gray-400 icon-tabler icon-tabler-brand-python"
                 width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
@@ -386,7 +391,7 @@
               </svg>
               <span>Backend Development</span>
             </div>
-            <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd"
                 d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
@@ -562,9 +567,6 @@
 
             </div>
 
-
-
-
             <h3 class="text-normal mb-4 mt-8 font-medium text-gray-500">Testing Frameworks</h3>
 
             <div class="flex flex-wrap gap-3">
@@ -573,6 +575,27 @@
                 <div class="flex flex-col gap-1 justify-center items-center h-full">
                   <img src="./assets/moch.svg" class="h-10 w-10">
                   <span class="text-xs font-medium text-gray-500 dark:text-white">Mochajs</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/sentry-icon-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Sentry</span>
+                </div>
+              </div>
+
+
+            </div>
+
+            <h3 class="text-normal mb-4 mt-8 font-medium text-gray-500">CDN & Security Platform</h3>
+
+            <div class="flex flex-wrap gap-3">
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/cloudflare-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Cloudflare</span>
                 </div>
               </div>
 
@@ -657,12 +680,6 @@
                 </div>
               </div>
 
-              <div class="bg-white rounded-lg p-2 w-20 h-20">
-                <div class="flex flex-col gap-1 justify-center items-center h-full">
-                  <img src="./assets/jquery-svgrepo-com.svg" class="h-10 w-10">
-                  <span class="text-xs font-medium text-gray-500 dark:text-white">Jquery</span>
-                </div>
-              </div>
 
               <div class="bg-white rounded-lg p-2 w-20 h-20">
                 <div class="flex flex-col gap-1 justify-center items-center h-full">
@@ -811,7 +828,7 @@
               <!--             <h3 class="text-normal mb-6 font-medium text-gray-500">Client-side languages</h3> -->
 
 
-            <h3 class="text-normal mb-4 font-medium text-gray-500">Source code / (CI/CD)</h3>
+            <h3 class="text-normal mb-4 font-medium text-gray-500">Source Code Managment/(CI/CD)</h3>
             <div class="flex flex-wrap gap-3">
 
               <div class="bg-white rounded-lg p-2 w-20 h-20">
@@ -851,9 +868,18 @@
                 </div>
               </div>
             </div>
+
+            <h3 class="text-normal mb-4 mt-8 font-medium text-gray-500">Data Visualization & Monitoring</h3>
+            <div class="flex flex-wrap gap-3">
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/grafana-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Grafana</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-
 
 
 
@@ -861,6 +887,80 @@
           <button type="button"
             class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
             data-accordion-target="#accordion-color-body-4" aria-expanded="false"
+            aria-controls="accordion-color-body-3">
+            <div class="flex gap-3">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-layout-dashboard text-gray-400" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="1.4" stroke="currentColor" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 4h6v8h-6z"></path>
+                <path d="M4 16h6v4h-6z"></path>
+                <path d="M14 12h6v8h-6z"></path>
+                <path d="M14 4h6v4h-6z"></path>
+              </svg>
+              <span>UI/UX & Branding</span>
+            </div>
+            <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </h2>
+        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+          <div class="p-5 font-light bg-gray-50 border border-b-0 border-gray-200 dark:border-gray-700">
+            <p class="mb-2 text-gray-500 dark:text-gray-400">
+              <!--             <h3 class="text-normal mb-6 font-medium text-gray-500">Client-side languages</h3> -->
+
+
+            <h3 class="text-normal mb-4 font-medium text-gray-500">UI/UX Design & Prototyping</h3>
+            <div class="flex flex-wrap gap-3">
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/adobe-xd-logo-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Adobe XD</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/figma-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Figma</span>
+                </div>
+              </div>
+
+            </div>
+
+            <h3 class="text-normal mb-4 mt-8 font-medium text-gray-500">Branding Tools</h3>
+            <div class="flex flex-wrap gap-3">
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/photoshop-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Photoshop</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/illustrator-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Illustrator</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+
+
+        <h2 id="accordion-color-heading-5">
+          <button type="button"
+            class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-800 border border-b-0 border-gray-200 dark:border-gray-700 dark:text-gray-400 hover:bg-white dark:hover:bg-gray-800"
+            data-accordion-target="#accordion-color-body-5" aria-expanded="false"
             aria-controls="accordion-color-body-3">
             <div class="flex gap-3">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-cpu text-gray-400" width="24"
@@ -888,10 +988,32 @@
             </svg>
           </button>
         </h2>
-        <div id="accordion-color-body-4" class="hidden" aria-labelledby="accordion-color-heading-4">
+        <div id="accordion-color-body-5" class="hidden" aria-labelledby="accordion-color-heading-5">
           <div class="p-5 font-light bg-gray-50 border border-b-0 border-gray-200 dark:border-gray-700">
             <p class="mb-2 text-gray-500 dark:text-gray-400">
               <!--             <h3 class="text-normal mb-6 font-medium text-gray-500">Client-side languages</h3> -->
+
+
+            <h3 class="text-normal mb-4 font-medium text-gray-500">Data Visualization & Monitoring</h3>
+            <div class="flex flex-wrap gap-3">
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/c-program-icon.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">C</span>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-2 w-20 h-20">
+                <div class="flex flex-col gap-1 justify-center items-center h-full">
+                  <img src="./assets/arduino-svgrepo-com.svg" class="h-10 w-10">
+                  <span class="text-xs font-medium text-gray-500 dark:text-white">Arduino</span>
+                </div>
+              </div>
+
+            </div>
+
+            <h3 class="text-normal mb-4 mt-8 font-medium text-gray-500">Data Visualization & Monitoring</h3>
 
             <div class="flex flex-wrap gap-3">
 
@@ -909,9 +1031,8 @@
                 </div>
               </div>
 
-
-
             </div>
+
           </div>
         </div>
 
