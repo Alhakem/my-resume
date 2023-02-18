@@ -1,0 +1,51 @@
+
+body{
+  padding-bottom: 1.5rem;
+}
+body .btm-nav{
+  padding-bottom: env(safe-area-inset-bottom);
+  height: 3rem;
+  --tw-bg-opacity: 1;
+  color: currentColor;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  position: fixed;
+}
+#experance-page,
+#loading-spinner{
+  display:none;
+}
+#loading-spinner{
+  height: calc(100vh - 50px);
+}
+#more-skills{
+  cursor: pointer;
+}
+/* h4{
+  position: sticky;
+  top: 0;
+  background: rgb(249 250 251 / var(--tw-bg-opacity));
+} */
+
+/* pre {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  word-break: keep-all
+}
+
+#main-page .mockup-code pre[data-prefix]:before{
+  display: none;
+}
+#main-page .mockup-code{
+  padding-left: 30px;
+}
+
+.mockup-code:before{
+  margin-left: -22px;
+} */
