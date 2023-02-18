@@ -1,4 +1,4 @@
-const buttons = document.getElementsByTagName("button");
+const buttons = document.getElementById("btm-nav").getElementsByTagName("button");
 const moreSkills = document.getElementById("more-skills");
 const buttonsArray = [...buttons];
 let currentComponent = "main-page";
