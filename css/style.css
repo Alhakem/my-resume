@@ -66,6 +66,10 @@ section{
   max-width: 780px;
   margin: 0 auto;
 }
+
+#btm-nav{
+  z-index:999;
+}
 /* h4{
   position: sticky;
   top: 0;
