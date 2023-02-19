@@ -10,27 +10,15 @@ if(localStorage.getItem('currentComponent')){
   currentComponent = "main-page";
 }
 
-showComponent(currentComponent, "block");
+setCurrentComponent(currentComponent, "block");
 
 buttonsArray.forEach((btn) => {
-  btn.addEventListener("click", function() {
-    hideComponent(currentComponent);
-    showComponent("loading-spinner", "flex");
-    setTimeout(() => {
-      hideComponent("loading-spinner");
-      showComponent(this.dataset.page, "block");
-    }, 200);
-
-    let currentBtn = document.getElementsByClassName("active");
-    currentBtn[0].className = currentBtn[0].classList.remove("active");
-    this.classList.add("active");
-    currentComponent = this.dataset.page;
-    localStorage.setItem('currentComponent', currentComponent);
+  btn.addEventListener("click", function() {   
+    setCurrentComponent(this.dataset.page)
   });
 });
 
 moreSkills.addEventListener("click", moreAboutSkills)
-
 learnMoreSkills.addEventListener("click", moreAboutSkills)
 
 function showComponent(component, display) {
@@ -42,25 +30,34 @@ function hideComponent(component) {
 }
 
 function moreAboutSkills() {
+  setCurrentComponent("experance-page")
+}
+
+function setCurrentComponent(component){
+  if(localStorage.getItem('currentComponent')){
+    currentComponent = localStorage.getItem('currentComponent')
+  }else{
+    currentComponent = "main-page";
+  }
   hideComponent(currentComponent);
   showComponent("loading-spinner", "flex");
   setTimeout(() => {
     hideComponent("loading-spinner");
-    showComponent("experance-page", "block");
+    showComponent(component, "block");
   }, 200);
   let currentBtn = document.getElementsByClassName("active");
-  currentBtn[0].className = currentBtn[0].classList.remove("active");
-  document.querySelectorAll('[data-page="experance-page"]')[0].classList.add("active");
-  currentComponent = "experance-page";
-  localStorage.setItem('currentComponent', 'experance-page');
-
+  if(currentBtn.length){
+    currentBtn[0].className = currentBtn[0].classList.remove("active");
+  }
+  document.querySelectorAll(`[data-page="${component}"]`)[0].classList.add("active");
+  currentComponent = component;
+  localStorage.setItem('currentComponent', currentComponent);
 }
 
 
  new TypeIt("#introduction", {
   speed: 20,
- startDelay: 80
-  // loop: true,
+  startDelay: 80
 }).type('<strong>Full-Stack Architect with 13 years of experience delivering exceptional software solutions.</strong>', { delay: 100 })
   .type(' Adept at both front-end and back-end technologies, with a focus on creating a seamless user eperience.', { delay: 200 })
   .move(-9, { delay: 100 })
