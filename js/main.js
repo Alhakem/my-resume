@@ -1,5 +1,6 @@
 const buttons = document.getElementById("btm-nav").getElementsByTagName("button");
 const moreSkills = document.getElementById("more-skills");
+const learnMoreSkills = document.getElementById("learn-more-skills");
 const buttonsArray = [...buttons];
 let currentComponent = "main-page";
 
@@ -19,7 +20,19 @@ buttonsArray.forEach((btn) => {
   });
 });
 
-moreSkills.addEventListener("click", function() {
+moreSkills.addEventListener("click", moreAboutSkills)
+
+learnMoreSkills.addEventListener("click", moreAboutSkills)
+
+function showComponent(component, display) {
+  document.getElementById(component).style.display = display;
+}
+
+function hideComponent(component) {
+  document.getElementById(component).style.display = "none";
+}
+
+function moreAboutSkills() {
   hideComponent(currentComponent);
   showComponent("loading-spinner", "flex");
   setTimeout(() => {
@@ -30,14 +43,18 @@ moreSkills.addEventListener("click", function() {
   currentBtn[0].className = currentBtn[0].classList.remove("active");
   document.querySelectorAll('[data-page="experance-page"]')[0].classList.add("active");
   currentComponent = "experance-page";
-})
-
-function showComponent(component, display) {
-  document.getElementById(component).style.display = display;
 }
 
-function hideComponent(component) {
-  document.getElementById(component).style.display = "none";
-}
 
+ new TypeIt("#introduction", {
+  speed: 20,
+ startDelay: 80
+  // loop: true,
+}).type('<strong>Full-Stack Architect with 13 years of experience delivering exceptional software solutions.</strong>', { delay: 100 })
+  .type(' Adept at both front-end and back-end technologies, with a focus on creating a seamless user eperience.', { delay: 200 })
+  .move(-9, { delay: 100 })
+  .type('x', { delay: 200 })
+  .move(9, { delay: 100 })
+  .type(' Committed to staying up-to-date with emerging technologies to continuously improve software solutions.', { delay: 200 })
+  .go();
 

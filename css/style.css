@@ -14,7 +14,8 @@ body .btm-nav{
   position: fixed;
 }
 #experance-page,
-#loading-spinner{
+#loading-spinner,
+#portfolio-page{
   display:none;
 }
 section{
@@ -49,7 +50,14 @@ section{
   .name-title{
     margin-left:8px;
   }
-  .avatar 
+}
+#accordion-flush h2{
+  position: sticky;
+  top:0;
+}
+#introduction{
+  min-height: 170px;
+  max-width: 345px;
 }
 /* h4{
   position: sticky;
