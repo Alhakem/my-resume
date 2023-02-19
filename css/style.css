@@ -70,6 +70,20 @@ section{
 #btm-nav{
   z-index:999;
 }
+.hero-bg{
+  position: absolute;
+  z-index: 0;
+  top: 70px;
+  font-size: 20vw;
+}
+.hero-content,
+#introduction{
+  position: relative;
+  z-index: 1;
+}
+#main-page{
+  overflow: hidden;
+}
 /* h4{
   position: sticky;
   top: 0;
