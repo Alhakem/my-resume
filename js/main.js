@@ -4,16 +4,16 @@ const learnMoreSkills = document.getElementById("learn-more-skills");
 const buttonsArray = [...buttons];
 let currentComponent;
 
-if(localStorage.getItem('currentComponent')){
+if (localStorage.getItem('currentComponent')) {
   currentComponent = localStorage.getItem('currentComponent')
-}else{
+} else {
   currentComponent = "main-page";
 }
 
 setCurrentComponent(currentComponent, "block");
 
 buttonsArray.forEach((btn) => {
-  btn.addEventListener("click", function() {   
+  btn.addEventListener("click", function() {
     setCurrentComponent(this.dataset.page)
   });
 });
@@ -33,10 +33,10 @@ function moreAboutSkills() {
   setCurrentComponent("experance-page")
 }
 
-function setCurrentComponent(component){
-  if(localStorage.getItem('currentComponent')){
+function setCurrentComponent(component) {
+  if (localStorage.getItem('currentComponent')) {
     currentComponent = localStorage.getItem('currentComponent')
-  }else{
+  } else {
     currentComponent = "main-page";
   }
   hideComponent(currentComponent);
@@ -46,7 +46,7 @@ function setCurrentComponent(component){
     showComponent(component, "block");
   }, 200);
   let currentBtn = document.getElementsByClassName("active");
-  if(currentBtn.length){
+  if (currentBtn.length) {
     currentBtn[0].className = currentBtn[0].classList.remove("active");
   }
   document.querySelectorAll(`[data-page="${component}"]`)[0].classList.add("active");
@@ -55,10 +55,10 @@ function setCurrentComponent(component){
 }
 
 
- new TypeIt("#introduction", {
+new TypeIt("#introduction", {
   speed: 20,
   startDelay: 80
-}).type('<strong>Full-Stack Architect with 13 years of experience delivering exceptional software solutions.</strong>', { delay: 100 })
+}).type('<strong>I am a full-stack architect with 13 years of experience delivering exceptional solutions.</strong>', { delay: 100 })
   .type(' Adept at both front-end and back-end technologies, with a focus on creating a seamless user eperience.', { delay: 200 })
   .move(-9, { delay: 100 })
   .type('x', { delay: 200 })
@@ -66,3 +66,12 @@ function setCurrentComponent(component){
   .type(' Committed to staying up-to-date with emerging technologies to continuously improve software solutions.', { delay: 200 })
   .go();
 
+
+var mixer = mixitup('#portfoliolist', {
+  controls: {
+    toggleDefault: 'none'
+  },
+  animation: {
+    effects: 'fade'
+  }
+});

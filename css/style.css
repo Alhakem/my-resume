@@ -56,6 +56,7 @@ section{
   position: sticky;
   top:0;
   z-index: 10;
+  background-color: #fff;
 }
 #introduction{
   max-width: 550px;
@@ -74,7 +75,7 @@ section{
   position: absolute;
   z-index: 0;
   top: 70px;
-  font-size: 20vw;
+  font-size: 22vw;
 }
 .hero-content,
 #introduction{
