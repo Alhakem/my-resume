@@ -32,9 +32,9 @@ section{
   cursor: pointer;
 }
 
-.hero-content{
-  align-items: baseline;
-}
+/* .hero-content{
+  align-items: start;
+} */
 
 @media (min-width: 768px){
   .introduction{
@@ -44,20 +44,20 @@ section{
   .hero-content{
     align-items: baseline;
   }
-  #main-page .job-title{
+/*   #main-page .job-title{
     text-align: left !important;
-  }
-  .name-title{
+  } */
+/*   .name-title{
     margin-left:8px;
-  }
+  } */
 }
 #accordion-flush h2{
   position: sticky;
   top:0;
 }
 #introduction{
-  min-height: 170px;
-  max-width: 345px;
+  max-width: 380px;
+  margin: 0 auto;
 }
 /* h4{
   position: sticky;
