@@ -2,7 +2,15 @@ const buttons = document.getElementById("btm-nav").getElementsByTagName("button"
 const moreSkills = document.getElementById("more-skills");
 const learnMoreSkills = document.getElementById("learn-more-skills");
 const buttonsArray = [...buttons];
-let currentComponent = "main-page";
+let currentComponent;
+
+if(localStorage.getItem('currentComponent')){
+  currentComponent = localStorage.getItem('currentComponent')
+}else{
+  currentComponent = "main-page";
+}
+
+showComponent(currentComponent, "block");
 
 buttonsArray.forEach((btn) => {
   btn.addEventListener("click", function() {
@@ -17,6 +25,7 @@ buttonsArray.forEach((btn) => {
     currentBtn[0].className = currentBtn[0].classList.remove("active");
     this.classList.add("active");
     currentComponent = this.dataset.page;
+    localStorage.setItem('currentComponent', currentComponent);
   });
 });
 
@@ -43,6 +52,8 @@ function moreAboutSkills() {
   currentBtn[0].className = currentBtn[0].classList.remove("active");
   document.querySelectorAll('[data-page="experance-page"]')[0].classList.add("active");
   currentComponent = "experance-page";
+  localStorage.setItem('currentComponent', 'experance-page');
+
 }
 
 
