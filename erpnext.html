@@ -1,0 +1,453 @@
+<!doctype html>
+<html class="bg-gray-50">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
+  <link href="./css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <section class="px-6 pt-4 bg-white">
+
+    <div class="text-md breadcrumbs mb-7">
+      <ul>
+        <li><a>Home</a></li>
+        <li>Skills</li>
+        <li>Problems I’ve Solved</li>
+      </ul>
+    </div>
+
+    <h4 class="text-2xl font-bold dark:text-white mb-3 pt-4">ERPNext Customization</h4>
+    <p class="mb-6 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+      With experience implementing ERPNext in different organizations, I have resolved issues that impeded user
+      efficiency and experience by observing and taking user feedback, resulting in a more seamless and satisfying user
+      experience. Some of the most notable issues I resolved are highlighted below.
+    </p>
+
+    <section class="pb-1">
+
+      <h3 class="flex text-2xl font-bold dark:text-white mb-3 pt-4">
+
+
+        Navigation in ERPNext
+      </h3>
+      <div class="issue">
+        <h3 class="flex justify-start gap-2 items-center text-xl font-bold dark:text-white mb-3 pt-4">
+
+          Issue
+        </h3>
+        <p class="mb-6 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          The current webpage routing in ERPNext is an inefficient, making users easily get distracted and lose focus on
+          their tasks.
+        </p>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-orange-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-sad"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+              <path d="M9 10l.01 0"></path>
+              <path d="M15 10l.01 0"></path>
+              <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
+            </svg>
+
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400 ">Users are required to open a new browser
+              tab for each page in order to multitask.</span>
+          </li>
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-orange-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-sad"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+              <path d="M9 10l.01 0"></path>
+              <path d="M15 10l.01 0"></path>
+              <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Users have to remember which browser tab
+              they needed to access for different tasks.</span>
+          </li>
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-orange-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-sad"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+              <path d="M9 10l.01 0"></path>
+              <path d="M15 10l.01 0"></path>
+              <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Users are forced to navigate back and
+              forth between different pages.</span>
+          </li>
+
+        </ul>
+
+
+        <!-- <h3 class="text-xl font-bold dark:text-white mb-3 pt-4">
+             Desired Solution
+           </h3>
+     
+       <p class="mb-4 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+         The solution should enable users to track their tasks and navigate between different modules within a single view, while providing them with a more user-friendly experience.
+         </p>
+     
+         <ul role="list" class="space-y-5 my-7">
+                 
+                 <li class="flex space-x-3">
+                     <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                     <span class="text-base text-md  text-gray-700 dark:text-gray-400">Users should be able to switch between modules and pages quickly and easily without losing track of their progress.</span>
+                 </li>
+           <li class="flex space-x-3">
+                     <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                     <span class="text-base text-md  text-gray-700 dark:text-gray-400">The Interface should make it easier to manage multiple tasks at once.</span>
+                 </li>
+                 <li class="flex space-x-3">
+                     <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                     <span class="text-base text-md  text-gray-700 dark:text-gray-400">The Interface should reduce confusion and making it easier for users to stay focused.</span>
+                 </li>
+     
+             </ul> -->
+
+        <div
+          class="p-4 mb-5 text-md font-normal text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300"
+          role="alert">
+          <span class="font-medium">Based on my observations,</span> users are more familiar with a desktop-like
+          experience compared to web applications. Additionally, all available solutions in the local market are desktop
+          applications, making the desktop experience the standard for users.
+        </div>
+
+        <h3 class="text-xl font-bold dark:text-white mb-3 pt-4">
+          Solution
+        </h3>
+
+        <p class="mb-4 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          The solution should enable users to track their tasks and navigate between different modules within a single
+          view, while providing them with a more user-friendly experience.
+        </p>
+
+        <p class="mb-8 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          To arrive at the desired solution, I considered two different approaches, including a
+          <strong>tabs-based</strong> interface and a <strong>windows-based</strong> interface.
+        </p>
+
+
+        <div class="flex flex-wrap gap-3 justify-around">
+
+          <div class="bg-gray-50 rounded-lg p-3 grow h-42">
+            <div class="flex flex-col gap-1.5 justify-center items-center h-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window " width="48"
+                height="48" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                <path d="M6 8h.01"></path>
+                <path d="M9 8h.01"></path>
+              </svg>
+
+              <span class="text-xs font-medium text-gray-700 dark:text-white">tabs-based interface</span>
+            </div>
+          </div>
+          <div class="bg-gray-50 rounded-lg p-3 grow h-42">
+            <div class="flex flex-col gap-1.5 justify-center items-center h-full">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window " width="48"
+                height="48" viewBox="0 0 24 24" stroke-width="1.2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z"></path>
+                <path d="M6 8h.01"></path>
+                <path d="M9 8h.01"></path>
+              </svg>
+
+              <span class="text-xs font-medium text-gray-700 dark:text-white">window-based interface</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="mb-6 mt-8 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          I have implemented both the tabs-based and windows-based interfaces, and have conducted user testing and
+          received positive feedback, which validates the effectiveness of these new concepts.
+        </p>
+
+        <ul role="list" class="space-y-5 my-7">
+
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+
+
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Improved efficiency and productivity for
+              users, as they were able to manage multiple tasks at once.</span>
+            <!--                remember where to find the functions they needed. -->
+          </li>
+
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Users were able to switch between modules
+              and pages quickly and easily without losing track of their progress.</span>
+            <!--                remember where to find the functions they needed. -->
+          </li>
+
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+            <span class="text-base  text-md  text-gray-600 dark:text-gray-400">Increased user satisfaction, as the new
+              interface was more intuitive and user-friendly.</span>
+            <!--                remember where to find the functions they needed. -->
+          </li>
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+            <span class="text-base font-normal text-md  text-gray-600 dark:text-gray-400">Reduced errors and mistakes,
+              as the new
+              interface reduced confusion making it easier for users to stay focused.</span>
+          </li>
+
+        </ul>
+      </div>
+
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="pb-6">
+
+      <h3 class="flex text-2xl font-bold dark:text-white mb-3 pt-4">
+        Datatables in ERPNext
+      </h3>
+      <div class="issue">
+        <h3 class="flex justify-start gap-2 items-center text-xl font-bold dark:text-white mb-3 pt-4">
+
+          Issue
+        </h3>
+        <p class="mb-6 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          Users' productivity was hindered by ERPNext's datatable limitations, leading to increased time and effort to
+          complete tasks and reliance on external applications.
+        </p>
+        <ul role="list" class="space-y-5 my-7">
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-orange-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-sad"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+              <path d="M9 10l.01 0"></path>
+              <path d="M15 10l.01 0"></path>
+              <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
+            </svg>
+
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400 ">The table is restricted to five columns
+              per row, which forces users to enter data one row at a time, resulting in a time-consuming process.</span>
+          </li>
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-orange-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-sad"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+              <path d="M9 10l.01 0"></path>
+              <path d="M15 10l.01 0"></path>
+              <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Limited flexibility when working with
+              large amounts of data in data entry, as well as importing and exporting data.</span>
+          </li>
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-orange-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-sad"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+              <path d="M9 10l.01 0"></path>
+              <path d="M15 10l.01 0"></path>
+              <path d="M9.5 15.25a3.5 3.5 0 0 1 5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Lack of advanced features such as
+              filtering, sorting, and formulas, which makes it difficult to analyze and manipulate data.</span>
+          </li>
+
+        </ul>
+
+
+        <!-- <h3 class="text-xl font-bold dark:text-white mb-3 pt-4">
+           Desired Solution
+         </h3>
+   
+     <p class="mb-4 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+       The solution should enable users to track their tasks and navigate between different modules within a single view, while providing them with a more user-friendly experience.
+       </p>
+   
+       <ul role="list" class="space-y-5 my-7">
+               
+               <li class="flex space-x-3">
+                   <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                   <span class="text-base text-md  text-gray-700 dark:text-gray-400">Users should be able to switch between modules and pages quickly and easily without losing track of their progress.</span>
+               </li>
+         <li class="flex space-x-3">
+                   <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                   <span class="text-base text-md  text-gray-700 dark:text-gray-400">The Interface should make it easier to manage multiple tasks at once.</span>
+               </li>
+               <li class="flex space-x-3">
+                   <svg aria-hidden="true" class="flex-shrink-0 w-5 h-5 text-gray-300 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Check icon</title><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                   <span class="text-base text-md  text-gray-700 dark:text-gray-400">The Interface should reduce confusion and making it easier for users to stay focused.</span>
+               </li>
+   
+           </ul> -->
+
+        <div class="p-4  mb-5 text-md text-gray-800 rounded-lg bg-gray-50 dark:bg-gray-800 dark:text-gray-300"
+          role="alert">
+          <span class="font-medium">From my observations,</span> it's clear that users are more efficient and find it
+          more convenient to work with data in Excel and spreadsheets.
+        </div>
+
+        <h3 class="text-xl font-bold dark:text-white mb-3 pt-4">
+          Solution
+        </h3>
+
+        <p class="mb-4 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          The solution should provide users with a user-friendly datatable that resembles the functionality of Excel and
+          other spreadsheet applications, including advanced features such as filtering, sorting, and formulas, to
+          enable efficient and effective data management.
+        </p>
+
+        <p class="mb-8 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          To achieve the desired solution, I implemented a full-featured <strong> spreadsheet-like </strong>datatable
+          that addressed the limitations of the default datatable.
+        </p>
+
+        <p class="mb-8 text-md text-gray-700 font-normal dark:text-gray-300 introduction leading-7">
+          The new datatable improved the UI/UX of ERPNext in the following ways:
+        </p>
+
+        <ul role="list" class="space-y-5 my-7">
+
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+
+
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Improved efficiency and productivity for
+              users, as they were able to enter and manage data more quickly and accurately.</span>
+            <!--                remember where to find the functions they needed. -->
+          </li>
+
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Provided a more familiar and user-friendly
+              experience for users, as it resembled a spreadsheet that they were already familiar with.</span>
+          </li>
+
+          <li class="flex space-x-3">
+            <!-- Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+              class="flex-shrink-0 w-5 h-5 text-green-600 dark:text-blue-500 icon icon-tabler icon-tabler-mood-smile-beam"
+              width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path d="M12 21a9 9 0 1 1 0 -18a9 9 0 0 1 0 18z"></path>
+              <path d="M10 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M17 10c-.5 -1 -2.5 -1 -3 0"></path>
+              <path d="M14.5 15a3.5 3.5 0 0 1 -5 0"></path>
+            </svg>
+            <span class="text-base text-md  text-gray-700 dark:text-gray-400">Users were able to import, export,
+              analyze, and manipulate data more efficiently using the advanced features of the new table, without the
+              need to rely on other external applications or tools.</span>
+          </li>
+        </ul>
+      </div>
+
+    </section>
+
+
+
+
+
+
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+  <script src="./js/mix.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>

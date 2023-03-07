@@ -16,7 +16,8 @@ body .btm-nav{
 #experance-page,
 #loading-spinner,
 #portfolio-page,
-#main-page{
+#main-page,
+#projects-page{
   display:none;
 }
 section{
