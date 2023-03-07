@@ -21,12 +21,13 @@ body .btm-nav{
   display:none;
 }
 section{
-  max-width: 780px;
+/*   max-width: 780px; */
+  max-width: 830px;
   margin: 0 auto;
 }
-.introduction{
+/* .introduction{
   max-width: 460px;
-}
+} */
 #loading-spinner{
   height: calc(100vh - 50px);
 }
