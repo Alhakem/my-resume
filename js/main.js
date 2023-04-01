@@ -1,6 +1,11 @@
 const buttons = document.getElementById("btm-nav").getElementsByTagName("button");
 const moreSkills = document.getElementById("more-skills");
 const learnMoreSkills = document.getElementById("learn-more-skills");
+const prev1 = document.getElementById("prev1");
+const next2 = document.getElementById("next2");
+const prev2 = document.getElementById("prev2");
+const prev3 = document.getElementById("prev3");
+const next3 = document.getElementById("next3");
 const buttonsArray = [...buttons];
 let currentComponent;
 
@@ -20,6 +25,25 @@ buttonsArray.forEach((btn) => {
 
 moreSkills.addEventListener("click", moreAboutSkills)
 learnMoreSkills.addEventListener("click", moreAboutSkills)
+
+prev1.addEventListener("click", ()=>{
+  setCurrentComponent("main-page")
+})
+prev3.addEventListener("click", ()=>{
+  setCurrentComponent("projects-page")
+})
+
+next2.addEventListener("click", ()=>{
+  setCurrentComponent("projects-page")
+})
+
+prev2.addEventListener("click", ()=>{
+  setCurrentComponent("experance-page")
+})
+
+next3.addEventListener("click", ()=>{
+  setCurrentComponent("portfolio-page")
+})
 
 function showComponent(component, display) {
   document.getElementById(component).style.display = display;
