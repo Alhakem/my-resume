@@ -1,6 +1,7 @@
 
 body{
   padding-bottom: 1.5rem;
+  padding-top: 50px;
 }
 body .btm-nav{
   padding-bottom: env(safe-area-inset-bottom);
@@ -12,6 +13,7 @@ body .btm-nav{
   align-items: center;
   display: flex;
   position: fixed;
+  top: 0;
 }
 #experance-page,
 #loading-spinner,
@@ -118,4 +120,9 @@ section{
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
     -ms-filter: blur(2px);
+}
+
+.btm-nav>:where(.active){
+  border-top: none;
+  border-bottom: 3px solid black;
 }
